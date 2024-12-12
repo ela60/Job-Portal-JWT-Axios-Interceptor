@@ -1,8 +1,9 @@
 import Lottie from "lottie-react";
 import React, { useContext } from "react";
-import registerLottieData from "../../assets/Lottie/Register.json";
+import registerLottieData from "../../../assets/Lottie/Register.json";
 import AuthContext from "../../../context/AuthCOntext";
-import { Result } from "postcss";
+import { Link } from "react-router-dom";
+
 
 const Register = () => {
 
@@ -74,9 +75,10 @@ const Register = () => {
                 </a>
               </label>
             </div>
-            <div className="form-control mt-6">
-              <button className="btn btn-primary">Register</button>
-            </div>
+                      <Link to='/register' >
+                      <div className="form-control mt-6">
+              <button type="submit" className="btn btn-primary">Register</button>
+            </div></Link>
           </form>
         </div>
       </div>
